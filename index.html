@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+    </style>
+    <title>Labb2</title>
+    <link rel="stylesheet" href="style.CSS" />
+    <script src="event.js" defer></script>
+  </head>
+  <body>
+        <div id="wrapper">
+          <header>
+            <nav class="navbar">
+              <section class="logo">
+                <img src="IMG/logo transparent.png" alt="Logga för hemsida" />
+              </section>
+      
+              <ul class="nav-links">
+                <li><a href="index.HTML" class="active">Hem</a></li>
+                <li><a href="presentation.HTML">Om mig</a></li>
+                <li><a href="portfolio.HTML">Portfolio</a></li>
+                <li><a href="cv.HTML">CV</a></li>
+                <li><a href="contact.HTML">Kontaktuppgifter</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+          <section id="secretModal">
+              <section class="modal-window">
+                  <div class="close-container">
+                      <a id="secretModalClose" class="modal-close" href="#">X</a>
+                    </div>
+                    <iframe
+                    id="secretVideo" 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/PDJLvF1dUek&list" 
+                    title="youtube-video" 
+                    frameBorder="0"   
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+                    allowFullScreen>
+                </iframe>
+            </section>
+        </section>
+        
+        <main>
+            <section class="mainContent">
+              <section id="profile">
+                <div id="profile-pic">
+                   <img
+                    src="IMG/aesthetic-powerpuff-girls.gif"
+                    alt="Bild på Cajsa Mårtensson"
+                  /> 
+                </div>
+                <section class="section-text">
+                  <h2 class="mainText">Hej, mitt namn är</h2>
+                  <h1 id="primaryText">Cajsa Mårtensson</h1>
+                  <h3 class="mainText">Systemutvecklare .NET</h3>
+                  <p class="mainText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, optio quo voluptatem magni, earum fuga rem officiis,
+                    suscipit quisquam hic nisi obcaecati. Maiores voluptatum optio
+                    voluptates quibusdam doloremque explicabo perferendis.
+                  </p>
+                  <section class="btn-section">
+                    <a href="presentation.HTML" target="_self">Om mig</a>
+                    <a
+                      href="https://www.linkedin.com/in/cajsa-m%C3%A5rtensson-63866422b/"
+                      target="_blank"
+                      >Låt oss prata!</a>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </main>
+      
+          <footer>
+            <article class="footer-logos">
+              <p id="secretBtn">Följ gärna!</p>
+              <div class="logos">
+                <a href="https://github.com/CajsaMartensson" target="_blank">
+                  <img src="IMG/GitHub Logo.png" alt="Bildlänk till GitHub"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/cajsa-m%C3%A5rtensson-63866422b/"
+                  target="_blank"
+                  ><img src="IMG/linked in logo.svg" alt="Bildlänk till LinkedIn"
+                /></a>
+              </div>
+            </article>
+            <p>&copy; 2026 Cajsa Varberg</p>
+          </footer>
+        </div>
+  </body>
+</html>

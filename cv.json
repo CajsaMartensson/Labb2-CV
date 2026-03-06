@@ -1,0 +1,61 @@
+{"jobs": [
+    {
+        "company": "Destination Apelviken",
+        "title": "Receptionist",
+        "years": "2026 -"
+    },
+    {
+        "company": "Akutmottagning",
+        "title": "Sjuksköterska",
+        "years": "2023 - 2026"
+    },
+    {
+        "company": "Akutmottagning",
+        "title": "Sjuksköterska",
+        "years": "2023 - 2026"
+    },
+    {
+        "company": "CircleK",
+        "title": "Säljare",
+        "years": "2022 - 2023"
+    },
+    {
+        "company": "McDonald's",
+        "title": "Medarbetare",
+        "years": "2018 - 2022"
+    }
+],
+
+"education":[
+    {
+        "name": "Systemutvecklare .NET",
+        "graduationYear": 2027
+    },
+    {
+        "name": "Sjuksköteskeutbildning",
+        "graduationYear": 2024
+    },
+    {
+        "name": "Samhällsvetenskap med beteendeinrktning", 
+        "graduationYear": 2021
+    }
+],
+
+"skills":[
+    {
+        "name": "HTML"
+    },
+    {
+        "name": "CSS"
+    },
+    {
+        "name": "C#"
+    },
+    {
+        "name": "SQL/SSMS"
+    },
+    {
+        "name": "Scrum"
+    }
+]
+}

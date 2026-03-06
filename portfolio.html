@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.CSS" />
+        <script src="event.js" defer></script>
+        <script src="githubAPI.js" defer></script>
+  </head>
+  <body>
+<!-- TESTTTTTTTTT -->
+<div class="loader"></div>
+<!-- TESTTTTTTTTT -->
+    <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <section class="logo">
+          <img src="IMG/logo transparent.png" alt="Logga för hemsida" />
+        </section>
+
+        <ul class="nav-links">
+          <li><a href="index.HTML">Hem</a></li>
+          <li><a href="presentation.HTML">Om mig</a></li>
+          <li><a href="portfolio.HTML" class="active">Portfolio</a></li>
+          <li><a href="cv.HTML">CV</a></li>
+          <li><a href="contact.HTML">Kontaktuppgifter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+          <section id="secretModal">
+            <section class="modal-window">
+            <div class="close-container">
+                <a id="secretModalClose" class="modal-close" href="#">X</a>
+            </div>
+              <iframe
+              id="secretVideo" 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/PDJLvF1dUek&list" 
+              title="youtube-video" 
+              frameBorder="0"   
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+              allowFullScreen>
+            </iframe>
+    </section>
+    </section>
+
+    <main>
+    <!-- main -->
+      <section class="title">
+          <h2 class="mainText">Mina senaste</h2>
+          <h1 id="primaryText">Projekt</h1>
+      </section>
+      <section class="projects-container">
+        <ul class="rowOne">
+          <li class="project-card">
+          <section class="card-header">
+            <img src="IMG/bibliotek logo.webp" alt="Tecknad bild på bok">
+            <h2>Bibliotek</h2>
+          </section>
+        <section class="btn-section">
+        <a href="https://github.com/CajsaMartensson/Bibloteket" target="_blank">GitHub</a>
+        <div class="openModal">
+          <a
+          href="#modalOne"
+          target="_self">Mer info!</a>
+        </div>
+        </section>
+    </li>
+<li class="project-card">
+            <section class="card-header">
+              <img src="IMG/bank logo.png" alt="Tecknad bild på en bank">
+              <h2>BankApp</h2>
+          </section>
+        <section class="btn-section">
+        <a href="https://github.com/AlbertJyllhed/BankApp" target="_blank">GitHub</a>
+        <div class="openModal">
+          <a
+          href="#modalTwo"
+          target="_self">Mer info!</a>
+        </div>
+        </section>
+    </li>
+    <li class="project-card">
+          <section class="card-header">
+            <img src="IMG/schooldatabase logo.png" alt="Tecknad bild på skola">
+            <h2>Skoldatabas</h2>
+          </section>
+      <section class="btn-section">
+        <a href="https://github.com/CajsaMartensson/Labb3School_Cajsa-DATABASE" target="_blank">GitHub</a>
+        <div class="openModal">
+          <a
+          href="#modalThree"
+          target="_self">Mer info!</a>
+        </div>
+      </section>
+    </li>
+  </ul>
+  <ul class="rowTwo">
+    <li class="project-card">
+      <section class="card-header">
+            <img src="IMG/spotify logo.webp" alt="Spotifylogga">
+            <h2>Spotify LogIn</h2>
+          </section>
+        <section class="btn-section">
+          <a href="" target="_blank">GitHub</a>
+          <div class="openModal">
+            <a
+            href="#modalFour"
+            target="_self">Mer info!</a>
+        </div>
+</section>
+    </li>
+    </ul>
+  </section>
+  <section id="modalOne" class="modal">
+          <section class="modal-window">
+            <div class="close-container">
+              <a class="modal-close" href="#">X</a>
+            </div>
+            <div class="text-container">
+              <div id="libraryName"></div>
+              <div id="libraryText"></div>
+            </div>
+          </section>
+        </section>
+        <section id="modalTwo" class="modal">
+          <section class="modal-window">
+            <div class="close-container">
+              <a class="modal-close" href="#">X</a>
+            </div>
+            <div class="text-container">
+              <div id="bankName"></div>
+              <div id="bankText"></div>
+            </div>
+          </section>
+        </section>
+        <section id="modalThree" class="modal">
+          <section class="modal-window">
+            <div class="close-container">
+              <a class="modal-close" href="#">X</a>
+            </div>
+            <div class="text-container">
+              <div id="databaseName"></div>
+              <div id="databaseText"></div>            
+            </div>
+          </section>
+        </section>
+        <section id="modalFour" class="modal">
+          <section class="modal-window">
+            <div class="close-container">
+              <a class="modal-close" href="#">X</a>
+            </div>
+            <div class="text-container">
+              <div id="spotifyLogInName"></div>
+              <div id="spotifyLogInText"></div>
+            </div>
+          </section>
+        </section>
+</main>
+
+    <footer>
+        <article class="footer-logos">
+              <p id="secretBtn">Följ gärna!</p>
+            <div class="logos">
+                <a href="https://github.com/CajsaMartensson" target="_blank">
+                    <img src="IMG/GitHub Logo.png" alt="Bildlänk till GitHub"
+                    /></a>
+                    <a
+                    href="https://www.linkedin.com/in/cajsa-m%C3%A5rtensson-63866422b/"
+                    target="_blank"
+                    ><img src="IMG/linked in logo.svg" alt="Bildlänk till LinkedIn"
+                    /></a>
+                </div>
+            </article>
+            <p>&copy; 2026 Cajsa Varberg</p>
+    </footer>
+    </div>
+  </body>
+</html>

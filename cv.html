@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.CSS" />
+    <script src="script.js" defer></script>
+    <script src="event.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <section class="logo">
+          <img src="IMG/logo transparent.png" alt="Logga för hemsida" />
+        </section>
+
+        <ul class="nav-links">
+          <li><a href="index.HTML">Hem</a></li>
+          <li><a href="presentation.HTML">Om mig</a></li>
+          <li><a href="portfolio.HTML">Portfolio</a></li>
+          <li><a href="cv.HTML" class="active">CV</a></li>
+          <li><a href="contact.HTML">Kontaktuppgifter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="secretModal">
+              <section class="modal-window">
+                  <div class="close-container">
+                      <a id="secretModalClose" class="modal-close" href="#">X</a>
+                    </div>
+                    <iframe
+                    id="secretVideo" 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/PDJLvF1dUek&list" 
+                    title="youtube-video" 
+                    frameBorder="0"   
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+                    allowFullScreen>
+                </iframe>
+            </section>
+        </section>
+<main>
+  <!-- main -->
+
+  <section class="title">
+              <h2 class="mainText">Mitt</h2>
+          <h1 id="primaryText">CV</h1>
+  </section>
+
+  <section class="CV-cards">
+      <article class="card">
+          <h2 class="mainText">Utbildning</h2>
+          <ul id="educationList"> </ul>
+        </article>
+        <article class="card">
+          <h2 class="mainText">Arbetslivserfarenhet</h2>
+        <ul id="jobExperienceList"> </ul>
+        </article>
+    <article class="card">
+      <h2 class="mainText">Skills</h2>
+        <ul id="skillList"></ul>
+    </article>
+  </section>
+
+</main>
+    <footer>
+        <article class="footer-logos">
+              <p id="secretBtn">Följ gärna!</p>
+            <div class="logos">
+                <a href="https://github.com/CajsaMartensson" target="_blank">
+                    <img src="IMG/GitHub Logo.png" alt="Bildlänk till GitHub"
+                    /></a>
+                    <a
+                    href="https://www.linkedin.com/in/cajsa-m%C3%A5rtensson-63866422b/"
+                    target="_blank"
+                    ><img src="IMG/linked in logo.svg" alt="Bildlänk till LinkedIn"
+                    /></a>
+                </div>
+            </article>
+            <p>&copy; 2026 Cajsa Varberg</p>
+    </footer>
+  </div>
+  </body>
+</html>
