@@ -42,7 +42,8 @@ async function fetchGitHubInfo(repo){
             return;
         }
         const data = await response.json();
-    
+        loader.classList.remove("loader-active");
+        
         console.log(data);
 
         if(repo == "Bibloteket"){
@@ -62,9 +63,7 @@ async function fetchGitHubInfo(repo){
         }
     } catch (error){
         console.log("Ett fel uppstod:" + error)
-    } finally{
-        loader.classList.remove("loader-active");
-    }
+    } 
 }
 
 async function fetchStarredGitHubInfo(){
