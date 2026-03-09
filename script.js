@@ -4,11 +4,11 @@ async function GetData(){
     if(!response.ok){
         throw new Error("Kunde inte hämta data: " + response.statusText);
     }
-    const data = await response.json();
+    const {jobs, education, skills} = await response.json();
     console.log(data);
-    showJobExperience(data.jobs);
-    showEducation(data.education);
-    showSkills(data.skills);
+    showJobExperience(jobs);
+    showEducation(education);
+    showSkills(skills);
 }
 
 GetData();
