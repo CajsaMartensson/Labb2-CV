@@ -104,10 +104,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
   height: auto;
-  padding: 1rem 7rem;
+  padding: 1rem; /* Använd ett mindre, enhetligt värde */
+  margin: 1rem auto;
+  max-width: 800px;
 }
+
 
 .section-text {
   align-self: center;
@@ -270,10 +272,14 @@ footer a img {
 
 /* Sätta längst ned?? */
 @media (max-width: 500px) {
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
   #profile-pic img {
-    visibility: hidden;
-    height: 0;
-    width: 0;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -459,10 +465,12 @@ align-items: center;
 
 /* ----CV---- */
 
-.CV-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+.CV-cards, .project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  justify-items: center;
+  padding: 10px;
 }
 
 .card{
@@ -610,4 +618,21 @@ main.active{
     to{
         transform:rotate(1turn);
 }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 1em;
+    margin: 0.5em;  
+  }
 }
