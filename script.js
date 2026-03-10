@@ -42,7 +42,7 @@ function showEducation(educations){
         const educationElement = document.createElement("div");
         
         educationElement.innerHTML = `
-        <li>${education.name} - ${education.graduationYear})</li>
+        <li>${education.name} - ${education.graduationYear}</li>
         `;
         
         educationListElement.appendChild(educationElement);
